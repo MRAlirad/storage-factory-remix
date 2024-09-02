@@ -13,3 +13,4 @@ and we can use the "**new**" keyword to have a object of the imported contract
 ```js
     SimpleStorage public simpleStorage = new SimpleStoreage();
 ```
+

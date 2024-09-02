@@ -5,8 +5,14 @@ import './SimpleStorage.sol';
 
 contract StorageFactory {
     SimpleStorage public simpleStorage;
+    SimpleStorage[] public simpleStorageArray;
 
-    function createSimpleStorageContract public {
+    function createSimpleStorageContract() public {
         simpleStorage = new SimpleStorage()
+    }
+    
+    function createSimpleStorageContractAndAddToArray() public {
+        SimpleStorage simpleStorage = new SimpleStorage();
+        simpleStorageArray.push(simpleStorage);
     }
 }
