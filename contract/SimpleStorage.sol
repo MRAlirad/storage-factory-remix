@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.8;
+pragma solidity 0.8.19;
 
 contract SimpleStorage {
     uint favouriteNumber = 10;
@@ -24,10 +24,6 @@ contract SimpleStorage {
 
     function retrieve() public view returns(uint256) {
         return favouriteNumber;
-    }
-
-    function add() public pure returns(uint256) {
-        return (1 + 1);
     }
 
     function addPerson(string memory _name, uint256 _favouriteNumber) public {
